@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://movox.agency/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://movox.agency/pricing</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://movox.agency/services</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://movox.agency/services/graphic-design</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://movox.agency/services/branding-packaging</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://movox.agency/services/website-development</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://movox.agency/services/app-development</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://movox.agency/services/digital-marketing</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://movox.agency/portfolio</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://movox.agency/portfolio/northwind-coffee-brand</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://movox.agency/portfolio/meridian-fintech-platform</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://movox.agency/portfolio/atlas-fitness-app</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://movox.agency/portfolio/harbor-travel-seo</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://movox.agency/portfolio/lumen-skincare-identity</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://movox.agency/portfolio/vertex-saas-portal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://movox.agency/about</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://movox.agency/insights</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://movox.agency/insights/brand-identity-checklist</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://movox.agency/insights/core-web-vitals-field-guide</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://movox.agency/insights/mvp-scope-cut-framework</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://movox.agency/insights/seo-content-clusters</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://movox.agency/insights/design-handoff-checklist</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://movox.agency/insights/packaging-shelf-psychology</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://movox.agency/contact</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://movox.agency/start-a-project</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://movox.agency/privacy-policy</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://movox.agency/terms</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+</urlset>

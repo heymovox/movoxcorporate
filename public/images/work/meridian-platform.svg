@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Abstract fintech dashboard interface composition">
+  <rect width="800" height="600" fill="#EFF7FB"/>
+  <rect x="0" y="0" width="800" height="600" fill="#ffffff" opacity="0.4"/>
+  <g>
+    <rect x="120" y="90" width="560" height="360" rx="18" fill="#ffffff" stroke="#DCEEF6" stroke-width="2"/>
+    <rect x="120" y="90" width="560" height="64" rx="18" fill="#003655"/>
+    <circle cx="155" cy="122" r="7" fill="#2382B8"/>
+    <circle cx="178" cy="122" r="7" fill="#8CC6E1"/>
+    <circle cx="201" cy="122" r="7" fill="#DCEEF6"/>
+    <rect x="240" y="112" width="140" height="16" rx="8" fill="#ffffff" opacity="0.25"/>
+    <rect x="150" y="190" width="220" height="180" rx="12" fill="#EFF7FB"/>
+    <rect x="150" y="190" width="220" height="44" rx="12" fill="#003655"/>
+    <text x="170" y="218" font-family="Verdana, sans-serif" font-size="16" fill="#fff">Overview</text>
+    <rect x="170" y="256" width="160" height="10" rx="5" fill="#B9DDED"/>
+    <rect x="170" y="278" width="120" height="10" rx="5" fill="#B9DDED"/>
+    <rect x="170" y="312" width="180" height="30" rx="8" fill="#2382B8"/>
+    <rect x="400" y="190" width="250" height="180" rx="12" fill="#EFF7FB"/>
+    <polyline points="420,340 470,290 520,310 570,240 630,200" fill="none" stroke="#2382B8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="630" cy="200" r="6" fill="#003655"/>
+    <rect x="150" y="392" width="500" height="26" rx="13" fill="#DCEEF6"/>
+    <rect x="150" y="392" width="340" height="26" rx="13" fill="#126A98"/>
+  </g>
+  <g>
+    <rect x="560" y="470" width="180" height="70" rx="14" fill="#003655"/>
+    <text x="650" y="500" font-family="Verdana, sans-serif" font-size="14" fill="#8CC6E1" text-anchor="middle">Conversion</text>
+    <text x="650" y="526" font-family="Verdana, sans-serif" font-size="22" font-weight="bold" fill="#ffffff" text-anchor="middle">+85%</text>
+  </g>
+  <text x="400" y="585" font-family="Verdana, sans-serif" font-size="18" letter-spacing="5" fill="#003655" opacity="0.6" text-anchor="middle">B2B PLATFORM — WEB EXPERIENCE</text>
+</svg>

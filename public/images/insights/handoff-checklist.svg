@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="Design to development handoff illustration">
+  <rect width="800" height="450" fill="#EFF7FB"/>
+  <g>
+    <rect x="100" y="80" width="240" height="290" rx="18" fill="#ffffff" stroke="#DCEEF6" stroke-width="2"/>
+    <rect x="125" y="105" width="120" height="16" rx="8" fill="#003655"/>
+    <rect x="125" y="140" width="190" height="60" rx="10" fill="#DCEEF6"/>
+    <rect x="125" y="215" width="190" height="60" rx="10" fill="#DCEEF6"/>
+    <rect x="125" y="290" width="190" height="60" rx="10" fill="#2382B8"/>
+    <text x="220" y="327" font-family="Verdana, sans-serif" font-size="13" fill="#ffffff" text-anchor="middle">DESIGN</text>
+  </g>
+  <g>
+    <path d="M370 225 h60 m-16 -12 l16 12 l-16 12" stroke="#2382B8" strokeWidth="5" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
+  </g>
+  <g>
+    <rect x="460" y="80" width="240" height="290" rx="18" fill="#003655"/>
+    <rect x="485" y="105" width="120" height="16" rx="8" fill="#2382B8"/>
+    <rect x="485" y="140" width="190" height="60" rx="10" fill="#0A1E2E" stroke="#2382B8" strokeWidth="1"/>
+    <rect x="485" y="215" width="190" height="60" rx="10" fill="#0A1E2E" stroke="#2382B8" strokeWidth="1"/>
+    <rect x="485" y="290" width="190" height="60" rx="10" fill="#126A98"/>
+    <text x="580" y="327" font-family="Verdana, sans-serif" font-size="13" fill="#ffffff" text-anchor="middle">PRODUCTION</text>
+  </g>
+  <text x="400" y="425" font-family="Verdana, sans-serif" font-size="16" letter-spacing="4" fill="#003655" opacity="0.6" text-anchor="middle">HANDOFF — INTENT, NOT FILES</text>
+</svg>

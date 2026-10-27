@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="MVP scope framework illustration">
+  <rect width="800" height="450" fill="#003655"/>
+  <circle cx="120" cy="380" r="150" fill="#2382B8" opacity="0.18"/>
+  <g>
+    <rect x="90" y="70" width="200" height="140" rx="14" fill="#0A1E2E" stroke="#2382B8" stroke-width="1.5"/>
+    <text x="190" y="115" font-family="Verdana, sans-serif" font-size="15" font-weight="bold" fill="#ffffff" text-anchor="middle">Column A</text>
+    <text x="190" y="140" font-family="Verdana, sans-serif" font-size="12" fill="#8CC6E1" text-anchor="middle">The one job</text>
+    <rect x="115" y="160" width="150" height="8" rx="4" fill="#2382B8"/>
+  </g>
+  <g>
+    <rect x="300" y="70" width="200" height="140" rx="14" fill="#0A1E2E" stroke="#2382B8" stroke-width="1.5"/>
+    <text x="400" y="115" font-family="Verdana, sans-serif" font-size="15" font-weight="bold" fill="#ffffff" text-anchor="middle">Column B</text>
+    <text x="400" y="140" font-family="Verdana, sans-serif" font-size="12" fill="#8CC6E1" text-anchor="middle">Retention loop</text>
+    <rect x="325" y="160" width="150" height="8" rx="4" fill="#2382B8"/>
+  </g>
+  <g>
+    <rect x="510" y="70" width="200" height="140" rx="14" fill="#0A1E2E" stroke="#2382B8" stroke-width="1.5"/>
+    <text x="610" y="115" font-family="Verdana, sans-serif" font-size="15" font-weight="bold" fill="#ffffff" text-anchor="middle">Column C</text>
+    <text x="610" y="140" font-family="Verdana, sans-serif" font-size="12" fill="#8CC6E1" text-anchor="middle">Trust floor</text>
+    <rect x="535" y="160" width="150" height="8" rx="4" fill="#2382B8"/>
+  </g>
+  <g>
+    <rect x="90" y="240" width="620" height="120" rx="14" fill="#126A98"/>
+    <text x="400" y="285" font-family="Verdana, sans-serif" font-size="15" font-weight="bold" fill="#ffffff" text-anchor="middle">Ship in 16 weeks</text>
+    <text x="400" y="315" font-family="Verdana, sans-serif" font-size="12" fill="#DCEEF6" text-anchor="middle">Deferred features go on a dated backlog — with an owner and a trigger.</text>
+    <text x="400" y="340" font-family="Verdana, sans-serif" font-size="12" fill="#DCEEF6" text-anchor="middle">“When we see 1,000 WAU, we build social sharing.”</text>
+  </g>
+</svg>

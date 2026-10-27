@@ -1,0 +1,20 @@
+node_modules
+dist
+.env
+.env.local
+server/data
+*.log
+.DS_Store
+*.tsbuildinfo
+
+.env.vercel
+.env.vercel-clean
+
+# Local secrets & environment dumps — NEVER commit
+.env.server
+SERVER_ENV_VARS.txt
+
+# Local tooling + QA artifacts
+.freebuff/
+.qa-pixel.png
+

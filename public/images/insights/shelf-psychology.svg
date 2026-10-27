@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="Retail shelf packaging psychology illustration">
+  <rect width="800" height="450" fill="#003655"/>
+  <rect x="140" y="90" width="520" height="260" rx="12" fill="#0A1E2E"/>
+  <g>
+    {Array.from({ length: 8 }).map((_, i) => (
+      <rect key={i} x={160 + i * 60} y={110 + (i % 3) * 12} width="48" height={210 - (i % 3) * 24} rx="6" fill={i === 5 ? '#2382B8' : '#12486B'} opacity={i === 5 ? 1 : 0.75} />
+    ))}
+  </g>
+  <g>
+    <rect x="160" y="300" width="480" height="50" rx="10" fill="#2382B8"/>
+    <text x="400" y="332" font-family="Verdana, sans-serif" font-size="15" font-weight="bold" fill="#ffffff" text-anchor="middle">SHELF — 7 SECONDS OF ATTENTION</text>
+  </g>
+  <g fill="#DCEEF6" font-family="Verdana, sans-serif" font-size="12">
+    <text x="140" y="410">1. Recognition in a thumb swipe</text>
+    <text x="400" y="410">2. The five-second read</text>
+    <text x="620" y="410">3. Differentiation</text>
+  </g>
+  <g stroke="#8CC6E1" stroke-width="2" opacity="0.7">
+    <path d="M140 390 h620" strokeDasharray="2 8" strokeLinecap="round"/>
+  </g>
+</svg>

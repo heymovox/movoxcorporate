@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="Brand identity checklist illustration">
+  <defs>
+    <linearGradient id="bcbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#003655"/>
+      <stop offset="0.55" stop-color="#126A98"/>
+      <stop offset="1" stop-color="#2382B8"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bcbg)"/>
+  <circle cx="700" cy="60" r="140" fill="#ffffff" opacity="0.06"/>
+  <g>
+    <rect x="230" y="55" width="340" height="340" rx="18" fill="#ffffff"/>
+    {Array.from({ length: 7 }).map((_, i) => (
+      <g key={i}>
+        <rect x="265" y={95 + i * 42} width="22" height="22" rx="6" fill={i < 5 ? '#2382B8' : '#DCEEF6'} />
+        {i < 5 && <path d={`M270 ${106 + i * 42} l5 6 l9 -12`} stroke="#fff" strokeWidth="3" fill="none" strokeLinecap="round" strokeLinejoin="round" />}
+        <rect x="300" y={100 + i * 42} width={180 - (i % 3) * 30} height="10" rx="5" fill="#B9DDED" />
+      </g>
+    ))}
+  </g>
+  <text x="400" y="432" font-family="Verdana, sans-serif" font-size="16" letter-spacing="4" fill="#DCEEF6" opacity="0.85" text-anchor="middle">BRAND IDENTITY CHECKLIST</text>
+</svg>
