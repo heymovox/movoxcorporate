@@ -37,7 +37,7 @@ export function ServicePricingSection({ service }: ServicePricingSectionProps) {
         <Reveal delay={0.1} className="mb-16">
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
             {service.packages.map((pkg, i) => (
-              <PricingCard key={pkg.id} pkg={pkg} serviceName={service.name} index={i} />
+              <PricingCard key={pkg.id} pkg={pkg} serviceName={service.name} billing="monthly" index={i} />
             ))}
           </div>
         </Reveal>

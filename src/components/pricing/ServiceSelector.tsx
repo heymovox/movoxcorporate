@@ -32,14 +32,6 @@ export function ServiceSelector({ onServiceChange, initialService, onBillingChan
     onServiceChange(service);
   };
 
-  const toggleBilling = () => {
-    setIsYearly((prev) => {
-      const next = !prev;
-      onBillingChange?.(next ? 'yearly' : 'monthly');
-      return next;
-    });
-  };
-
   return (
     <div className="container-site">
       <div className="relative overflow-hidden rounded-[2rem] border border-brand-200/60 bg-gradient-to-br from-brand-50 via-white to-brand-50/40 shadow-[0_12px_40px_rgba(0,54,85,0.08)]">

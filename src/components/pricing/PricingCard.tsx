@@ -1,4 +1,4 @@
-import { CheckCircle2, ArrowRight, MessageCircle, Star, Sparkles } from 'lucide-react';
+import { CheckCircle2, ArrowRight, MessageCircle, Star } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { cn } from '../../lib/utils';
@@ -10,7 +10,8 @@ interface PricingCardProps {
   serviceName: string;
   billing: 'monthly' | 'yearly';
   index?: number;
-  yearlyPrice?: number;
+  /** Pre-formatted INR string for the yearly rate (PricingGrid formats it). */
+  yearlyPrice?: string;
 }
 
 // per-tier accent colors so the deck isn't monochrome

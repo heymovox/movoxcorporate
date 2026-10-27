@@ -171,7 +171,6 @@ interface SliderCardProps {
 }
 
 function SliderCard({ label, value, onChange, min, max, step, unit }: SliderCardProps) {
-  const pct = ((value - min) / (max - min)) * 100;
   const formatINR = (amount: number) =>
     new Intl.NumberFormat('en-IN', {
       style: 'currency',

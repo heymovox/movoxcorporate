@@ -7,7 +7,7 @@
  * produces the file — the same pattern used by InvoicePreview / Agreements.
  */
 import { useEffect, useMemo, useState } from 'react';
-import { Download, X, FileText, Send, Sparkles } from 'lucide-react';
+import { Download, X, FileText, Sparkles } from 'lucide-react';
 import { cn } from '../../lib/utils';
 import {
   LetterheadHeader,

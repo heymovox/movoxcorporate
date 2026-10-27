@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider } from './hooks/useAuth';
 import { Layout } from './components/Layout';
 import MaintenancePage from './components/MaintenancePage';
@@ -28,13 +28,6 @@ import { hostMode, isSecureHost, portalOrigin } from './lib/host';
 const API_BASE = (import.meta.env.VITE_API_URL ?? 'https://api.heymovox.com').replace(/\/+$/, '');
 
 /**
- * Maintenance mode only covers the public marketing pages. Staff dashboards,
- * the client portal and emailed agreement-signing links stay reachable so the
- * team can keep working (and clients can still sign) while the site is down.
- */
-const MAINTENANCE_EXEMPT = '/* dummy */';
-
-/**
  * The app serves three separate surfaces, decided by hostname:
  *
  *   heymovox.com         → marketing site (below)
@@ -48,7 +41,6 @@ const MAINTENANCE_EXEMPT = '/* dummy */';
 export default function App() {
   const [maintenance, setMaintenance] = useState(false);
   const [checking, setChecking] = useState(true);
-  const location = useLocation();
 
   useEffect(() => {
     if (hostMode() !== 'site') {
