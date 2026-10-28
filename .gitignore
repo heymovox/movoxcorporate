@@ -18,3 +18,10 @@ SERVER_ENV_VARS.txt
 .freebuff/
 .qa-pixel.png
 
+# Vercel CLI link files (project/org ids — deploy from CI/CLI only)
+.vercel/
+**/.vercel/
+
+
+.vercel
+.env*
