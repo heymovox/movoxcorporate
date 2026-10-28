@@ -8,15 +8,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 export default defineConfig({
   plugins: [react()],
   server: {
-    // Lets admin./portal./secure. subdomains be exercised against the dev
-    // server the same way they work in production.
     allowedHosts: true,
-    proxy: {
-      '/api': {
-        target: 'http://localhost:8787',
-        changeOrigin: true,
-      },
-    },
   },
   resolve: {
     alias: {
