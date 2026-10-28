@@ -10,7 +10,8 @@
     "moduleDetection": "force",
     "noEmit": true,
     "strict": true,
+    "esModuleInterop": true,
     "types": ["node"]
   },
-  "include": ["vite.config.ts"]
+  "include": ["vite.config.ts", "server/**/*.ts", "api/**/*.ts"]
 }
