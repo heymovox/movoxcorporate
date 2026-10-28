@@ -4,10 +4,10 @@ import crypto from 'node:crypto';
 import bcrypt from 'bcrypt';
 import { z } from 'zod';
 import dotenv from 'dotenv';
-import { pool } from './db.js';
-import { authenticateAdmin, generateToken } from './auth.js';
-import { can, normaliseRole, requireCap as cap } from './rbac.js';
-import { r2Upload, r2Delete, r2PublicUrl, R2_BUCKET, R2_PUBLIC_URL } from './r2.js';
+import { pool } from './db';
+import { authenticateAdmin, generateToken } from './auth';
+import { can, normaliseRole, requireCap as cap } from './rbac';
+import { r2Upload, r2Delete, r2PublicUrl, R2_BUCKET, R2_PUBLIC_URL } from './r2';
 
 dotenv.config();
 

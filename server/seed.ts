@@ -2,7 +2,7 @@
  * Seed script — creates the default admin user.
  * Run: npx tsx server/seed.ts
  */
-import { pool } from './db.js';
+import { pool } from './db';
 import bcrypt from 'bcrypt';
 
 const DEFAULT_EMAIL = 'admin@heymovox.com';
