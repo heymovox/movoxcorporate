@@ -21,11 +21,16 @@ export default function PortalLogin() {
 
   const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!import.meta.env.VITE_API_URL) {
+      setStatus('error');
+      setMessage('The admin backend is not configured. Please contact the site administrator.');
+      return;
+    }
     setStatus('submitting');
     setMessage('');
     try {
       const res = await fetch(
-        `${import.meta.env.VITE_API_URL ?? ''}/api/admin/login`,
+        `${import.meta.env.VITE_API_URL}/api/admin/login`,
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },

@@ -32,10 +32,16 @@ export default function AdminLogin() {
   });
 
   const onSubmit = async (values: z.infer<typeof loginSchema>) => {
+    const apiUrl = import.meta.env.VITE_API_URL;
+    if (!apiUrl) {
+      setErrorMessage('The admin backend is not configured. Please contact the site administrator.');
+      setStatus('error');
+      return;
+    }
     setStatus('submitting');
     setErrorMessage(null);
     try {
-      const res = await fetch(`${import.meta.env.VITE_API_URL ?? ''}/api/admin/login`, {
+      const res = await fetch(`${apiUrl}/api/admin/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(values),
