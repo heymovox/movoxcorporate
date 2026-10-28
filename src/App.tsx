@@ -24,9 +24,6 @@ import PortalLogin from './pages/portal/PortalLogin';
 import { ClientPortalGate, AdminLoginRoute } from './pages/admin';
 import { hostMode, isSecureHost, portalOrigin } from './lib/host';
 
-/** Base URL of the enquiry API. Uses api.heymovox.com subdomain in production. */
-const API_BASE = (import.meta.env.VITE_API_URL ?? 'https://api.heymovox.com').replace(/\/+$/, '');
-
 /**
  * The app serves three separate surfaces, decided by hostname:
  *
@@ -48,26 +45,14 @@ export default function App() {
       return;
     }
     // Build-time kill switch: set VITE_MAINTENANCE=true and redeploy to show
-    // the maintenance page even when the API is unreachable. Clearing it takes
-    // another rebuild, so the runtime flag below stays the normal control.
+    // the maintenance page. Runtime API check is disabled — the backend is
+    // deployed separately and manages its own maintenance window.
     if (import.meta.env.VITE_MAINTENANCE === 'true') {
       setMaintenance(true);
       setChecking(false);
       return;
     }
-    fetch(`${API_BASE}/api/content/maintenance`)
-      .then(r => {
-        if (!r.ok) throw new Error(`maintenance flag: HTTP ${r.status}`);
-        return r.json();
-      })
-      .then(d => setMaintenance(Boolean(d.maintenance)))
-      .catch(err => {
-        // Fail open: if the flag can't be read, show the site rather than a
-        // maintenance page nobody can turn off.
-        console.error(err);
-        setMaintenance(false);
-      })
-      .finally(() => setChecking(false));
+    setChecking(false);
   }, []);
 
   const publicSiteOnly = true;
