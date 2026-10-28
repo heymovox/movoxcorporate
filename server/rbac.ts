@@ -56,3 +56,39 @@ export function normaliseRole(value: unknown): Role {
 export function can(role: unknown, capability: Capability): boolean {
   return (ROLE_CAPABILITIES[normaliseRole(role)] as readonly string[]).includes(capability);
 }
+
+import type { Request, Response, NextFunction } from 'express';
+
+function currentUser(req: Request) {
+  return (req as any).admin as { id: string; role: string } | undefined;
+}
+
+export function requireCap(capability: Capability) {
+  return (req: Request, res: Response, next: NextFunction) => {
+    const user = currentUser(req);
+    if (!user) {
+      res.status(401).json({ ok: false, error: 'Unauthorized' });
+      return;
+    }
+    if (!can(user.role, capability)) {
+      res.status(403).json({ ok: false, error: `Your role (${user.role}) is not permitted to do this.` });
+      return;
+    }
+    next();
+  };
+}
+
+export function requireStaff() {
+  return (req: Request, res: Response, next: NextFunction) => {
+    const user = currentUser(req);
+    if (!user) {
+      res.status(401).json({ ok: false, error: 'Unauthorized' });
+      return;
+    }
+    if (normaliseRole(user.role) === 'client') {
+      res.status(403).json({ ok: false, error: 'Clients cannot access the admin API.' });
+      return;
+    }
+    next();
+  };
+}

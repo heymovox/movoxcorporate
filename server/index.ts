@@ -1354,9 +1354,9 @@ app.post('/api/upload', authenticateAdmin, upload.array('files', 5), async (req,
   }
 });
 
-app.delete('/api/upload/*', authenticateAdmin, async (req, res) => {
+app.delete('/api/upload/*splat', authenticateAdmin, async (req, res) => {
   try {
-    const key = req.params[0];
+    const key = String(req.params[0] || req.params.splat || '');
     if (!key) return res.status(400).json({ ok: false, error: 'Missing file key.' });
     await r2Delete(key);
     res.json({ ok: true });
